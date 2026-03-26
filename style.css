@@ -888,16 +888,22 @@ img {
     border-left: 1px solid rgba(255,255,255,0.05);
 }
 .contact-container {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr; /* left bigger than right */
-    gap: 4rem;
-    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
+.contact-item {
+    font-size: 1.1rem;
+}
 .contact-info {
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
-    padding: 3rem;
+    margin: 0 auto;
 }
 
 .contact-info p {
