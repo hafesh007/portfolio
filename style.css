@@ -1163,9 +1163,9 @@ footer {
    CUSTOM CURSOR
    ========================================= */
 @media screen and (min-width: 1024px) {
-    body, a, button, input, textarea, .scroll-to-top, .mobile-menu-btn, .nav-link {
-        cursor: none;
-    }
+    body {
+    cursor: default;
+}
 
 .custom-cursor {
     position: fixed;
