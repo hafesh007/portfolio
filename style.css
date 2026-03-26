@@ -120,7 +120,9 @@ img {
     border-color: rgba(59, 130, 246, 0.3);
     box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
 }
-
+.timeline-content p {
+    line-height: 1.7;
+}
 .section {
     padding: 100px 5%;
     max-width: 1200px;
