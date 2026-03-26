@@ -690,6 +690,10 @@ img {
 /* =========================================
    4. CERTIFICATIONS
    ========================================= */
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
+}
 .cert-card:first-child {
     border: 1px solid var(--neon-blue);
     box-shadow: 0 0 20px rgba(102, 252, 241, 0.1);
