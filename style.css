@@ -2,36 +2,35 @@
    DESIGN SYSTEM & GLOBAL VARIABLES
    ========================================= */
 :root {
-    /* Color Palette */
-    --bg-dark: #0b0c10;
-    --bg-light: #1f2833;
-    
-    /* Gradients and Neons */
-    --neon-blue: #66fcf1;
-    --neon-blue-dark: #45a29e;
-    --neon-purple: #9d4edd;
-    --neon-purple-light: #c77dff;
-    
-    /* Glassmorphism Variables */
-    --glass-bg: rgba(255, 255, 255, 0.03);
+    /* ===== CORE COLORS (Blue, White, Black) ===== */
+    --bg-dark: #0a0f1c;          /* deep black-blue */
+    --bg-light: #111827;         /* dark card background */
+
+    --primary-blue: #2563eb;     /* main blue */
+    --primary-blue-light: #3b82f6;
+    --primary-blue-glow: #60a5fa;
+
+    --white: #ffffff;
+    --off-white: #e5e7eb;
+
+    /* ===== GLASS EFFECT ===== */
+    --glass-bg: rgba(255, 255, 255, 0.04);
     --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    
-    /* Text Colors */
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    /* ===== TEXT ===== */
     --text-primary: #ffffff;
-    --text-secondary: #c5c6c7;
-    --text-muted: #8b8c8d;
-    
-    /* Typography */
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+
+    /* ===== TYPOGRAPHY ===== */
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition-medium: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --transition-slow: 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
 
+    /* ===== TRANSITIONS ===== */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+}
 /* =========================================
    RESET & BASE STYLES
    ========================================= */
@@ -100,11 +99,9 @@ img {
    UTILITIES
    ========================================= */
 .gradient-text {
-    background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple-light));
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-glow));
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
 }
 
 .glass-card {
@@ -119,9 +116,9 @@ img {
 }
 
 .glass-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 15px 40px rgba(102, 252, 241, 0.1);
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
 }
 
 .section {
@@ -166,30 +163,26 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--neon-purple), #7b2cbf);
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
     color: white;
-    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 6px 20px rgba(157, 78, 221, 0.6);
+    box-shadow: 0 6px 25px rgba(37, 99, 235, 0.6);
     transform: translateY(-2px);
-    color: white;
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--neon-blue);
-    border: 2px solid var(--neon-blue);
-    box-shadow: 0 0 10px rgba(102, 252, 241, 0.1);
+    color: var(--primary-blue-light);
+    border: 2px solid var(--primary-blue-light);
 }
 
 .btn-secondary:hover {
-    background: rgba(102, 252, 241, 0.1);
-    box-shadow: 0 0 20px rgba(102, 252, 241, 0.3);
-    transform: translateY(-2px);
+    background: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
 }
-
 .btn-sm {
     padding: 8px 16px;
     font-size: 0.85rem;
@@ -213,32 +206,15 @@ img {
 }
 
 .shape-1 {
-    width: 400px;
-    height: 400px;
-    background: rgba(157, 78, 221, 0.15);
-    top: -100px;
-    left: -100px;
-    animation-delay: 0s;
+    background: rgba(37, 99, 235, 0.15);
 }
-
 .shape-2 {
-    width: 500px;
-    height: 500px;
-    background: rgba(102, 252, 241, 0.1);
-    bottom: -150px;
-    right: -100px;
-    animation-delay: -5s;
+    background: rgba(59, 130, 246, 0.1);
 }
 
 .shape-3 {
-    width: 300px;
-    height: 300px;
-    background: rgba(199, 125, 255, 0.1);
-    top: 40%;
-    left: 40%;
-    animation-delay: -10s;
+    background: rgba(96, 165, 250, 0.1);
 }
-
 @keyframes float {
     0% { transform: translate(0, 0) scale(1); }
     50% { transform: translate(50px, 30px) scale(1.1); }
@@ -325,16 +301,13 @@ img {
     transition: var(--transition-fast);
 }
 
-.nav-link:hover {
-    color: var(--neon-blue);
-}
-
-.nav-link:hover::after, .nav-link.active::after {
-    width: 100%;
-}
-
+.nav-link:hover,
 .nav-link.active {
-    color: var(--neon-blue);
+    color: var(--primary-blue-light);
+}
+
+.nav-link::after {
+    background: var(--primary-blue);
 }
 
 .btn-contact {
@@ -383,10 +356,7 @@ img {
 }
 
 .greeting {
-    font-size: 1.2rem;
-    color: var(--neon-blue);
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    color: var(--primary-blue-light);
 }
 
 .name {
@@ -582,8 +552,8 @@ img {
 }
 
 .skill-tags span:hover {
-    background: var(--neon-blue);
-    color: black;
+    background: var(--primary-blue);
+    color: white;
 }
 
 /* Soft skills */
@@ -683,8 +653,8 @@ img {
     transition: var(--transition-medium);
 }
 
-.project-card:hover .project-img img {
-    transform: scale(1.1);
+.project-card:hover {
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.2);
 }
 
 .project-card:hover .project-overlay {
@@ -981,17 +951,10 @@ img {
     margin-bottom: 1.8rem;
 }
 
-.form-group input, 
-.form-group textarea {
-    width: 100%;
-    padding: 16px;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    color: white;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    transition: var(--transition-fast);
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.3);
 }
 
 .form-group input:focus, 
