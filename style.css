@@ -565,8 +565,9 @@ img {
    3. PROJECTS SECTION
    ========================================= */
 .project-img img {
-    border-radius: 15px 15px 0 0;
-    filter: brightness(0.9) contrast(1.1);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 .project-card:hover {
     box-shadow: 0 0 25px rgba(102, 252, 241, 0.15);
