@@ -55,8 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('mousemove', (e) => {
             // GSAP quickTo is great for performant cursor tracking, but requestAnimationFrame is also fine.
             // Using standard style updates for simplicity with CSS transition as defined.
-            cursor.style.left = `${e.clientX}px`;
-            cursor.style.top = `${e.clientY}px`;
+            gsap.to(cursor, {
+                x: e.clientX,
+                y: e.clientY,
+                duration: 0.1,
+                ease: "power2.out"
+            });
         });
 
         const hoverElements = document.querySelectorAll('a, button, input, textarea, .nav-link, .skill-card, .project-card');
