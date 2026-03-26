@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagha P | Aspiring Cloud Engineer</title>
+
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome Elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-text">Loading<span class="dots">...</span></div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Animated Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Port<span>folio.</span></a>
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certificates</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link btn-contact">Contact</a>
+            </nav>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content fade-in">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Anagha P</h1>
+               <h2 class="subtitle">Aspiring <span class="gradient-text">Cloud Engineer</span></h2>
+                <p class="tagline">
+                    B.Tech CSE student focused on cloud computing, AWS, and building scalable cloud-based solutions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#resume" class="btn btn-secondary">Download Resume</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/anagha-chithra/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/anagha-p005/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image-container fade-in delay-1">
+                <div class="glass-orb"></div>
+                <div class="profile-img-wrapper">
+                    <!-- Placeholder, replace with actual image -->
+                    <img src="hero.jpeg" alt="Profile Photo" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Skills Section -->
+        <section id="skills" class="section">
+    <div class="section-header fade-in">
+        <h2 class="section-title">Core <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="skills-container fade-in">
+
+        <!-- Technical Skills -->
+        <h3 class="skills-heading"><i class="fas fa-code"></i> Technical Skills</h3>
+
+        <div class="skills-grid-new">
+
+            <!-- Languages -->
+            <div class="glass-card skill-box">
+                <h4>Languages</h4>
+                <div class="skill-tags">
+                    <span>C++</span>
+                    <span>Java</span>
+                    <span>C</span>
+                    <span>Python</span>
+                </div>
+            </div>
+
+            <!-- Cloud -->
+            <div class="glass-card skill-box">
+                <h4>Cloud / DevOps</h4>
+                <div class="skill-tags">
+                    <span>AWS</span>
+                    <span>Azure</span>
+                    
+                </div>
+            </div>
+
+            <!-- Web -->
+            <div class="glass-card skill-box">
+                <h4>Web Technologies</h4>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="glass-card skill-box">
+                <h4>Tools & Platforms</h4>
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Soft Skills -->
+        <h3 class="skills-heading"><i class="fas fa-users"></i> Soft Skills</h3>
+
+        <div class="soft-skills-grid">
+            <div class="glass-card soft-skill">Problem-Solving</div>
+            <div class="glass-card soft-skill">Logical Thinking</div>
+            <div class="glass-card soft-skill">Adaptability</div>
+            <div class="glass-card soft-skill">Communication</div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- 3. Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-horizontal-wrapper">
+                <div class="projects-grid fade-in">
+                    <!-- Project 1 -->
+                    <div class="glass-card project-card">
+                        <div class="project-img">
+                            <img src="voicebot.png" alt="AI Voice Bot">
+                            <div class="project-overlay">
+                                <a href="https://github.com/anagha-chithra/" class="btn btn-sm btn-secondary"
+                                    target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI-Voice Acting Bot</h3>
+                            <ul class="project-points">
+                                <li>Built a C++ conversational agent simulating human-like voice-style responses</li>
+                                <li>Implemented phrase-pattern recognition for accurate input interpretation</li>
+                                <li>Added context retention for continuous and natural conversation flow</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span>C++</span>
+                                <span>DSA (Maps, Vectors)</span>
+                                <span>NLP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-card project-card">
+                        <div class="project-img">
+                            <img src="disk.png" alt="Disk Simulator">
+                            <div class="project-overlay">
+                                <a href="https://github.com/anagha-chithra/" class="btn btn-sm btn-secondary"
+                                    target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Advanced Disk Simulator</h3>
+                            <ul class="project-points">
+                                <li>Developed disk scheduling system with FCFS, SSTF, SCAN, and C-SCAN algorithms</li>
+                                <li>Visualized head movement and seek time for performance comparison</li>
+                                <li>Integrated C++ backend with interactive web interface</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span>C++</span>
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="glass-card project-card">
+                        <div class="project-img">
+                            <img src="translator.png" alt="Language Translator">
+                            <div class="project-overlay">
+                                <a href="https://github.com/anagha-chithra/" class="btn btn-sm btn-secondary"
+                                    target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI - Language Translator</h3>
+                            <ul class="project-points">
+                                <li>Built real-time AI translator using REST APIs and JavaScript</li>
+                                <li>Enabled multi-language support with fast and accurate translations</li>
+                                <li>Designed responsive UI for seamless experience across devices</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span>REST API</span>
+                                <span>JavaScript</span>
+                                <span>JSON</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- 4. Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="section-header fade-in">
+                <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="certs-grid fade-in">
+
+                <div class="glass-card cert-card">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cert-details">
+                        <h3>Data Structures & Algorithms Training</h3>
+                        <p class="issuer">Skillstone Grazitti • Jul 2025</p>
+                        <a href="https://drive.google.com/file/d/1D_OCym7D46uNTKlmdErX-HaQlxyjU2qB/view" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-details">
+                        <h3>Social Networks</h3>
+                        <p class="issuer">NPTEL • Apr 2025</p>
+                        <a href="https://drive.google.com/file/d/1wuvwualKbqBriPppu1hxQNi92XBkWHxr/view" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-details">
+                        <h3>Unrevealing Basic Python towards ML/AI</h3>
+                        <p class="issuer">CSE Pathshala • Mar 2024</p>
+                        <a href="https://drive.google.com/file/d/1eU0ImcEEdoC_wpSvdas1aQES76jPhHte/view" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-details">
+                        <h3>Responsive Web Design</h3>
+                        <p class="issuer">FreeCodeCamp • Nov 2023</p>
+                        <a href="https://drive.google.com/file/d/1LTucJHr4vs1V2qrff3UN6PlYV8yOJj_K/view" target="_blank" class="cert-link">
+                            View Certificate <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- 5. Education & Training Section -->
+        <section id="education" class="section">
+            <div class="section-header fade-in">
+                <h2 class="section-title"><span class="gradient-text">Education</span> </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="date">Since Aug 2023</span>
+                        <h3>Lovely Professional University</h3>
+                        <p>Bachelor of Technology - Computer Science and Engineering<br>CGPA: 7.9</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="date">Apr 2021 - Mar 2023</span>
+                        <h3>Kerala State Higher Secondary School</h3>
+                        <p>Higher Secondary (PCMB)<br>Percentage: 98.2%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <span class="date">Jun 2020 - Mar 2021</span>
+                        <h3>K T M H S Mannarkkad</h3>
+                        <p>Matriculation<br>Percentage: 95%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Resume Section -->
+        <section id="resume" class="section">
+            <div class="section-header fade-in">
+                <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="resume-container fade-in">
+                <div class="glass-card resume-card">
+                    <div class="resume-preview">
+                        <i class="far fa-file-pdf resume-icon"></i>
+                        <h3>Anagha_P_Resume.pdf</h3>
+                        <p>Updated: 2025</p>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="https://drive.google.com/file/d/1gKpmQdBA8jy2U1QIb9okNTs6m6KKn7pD/view?usp=drive_link" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View Online
+                        </a>
+
+                        <a href="resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-container fade-in">
+                <div class="glass-card contact-info">
+                    <h3>Let's Connect & Collaborate</h3>
+                    <p>
+                        I'm a B.Tech CSE student specializing in cloud computing and AWS. 
+                        I'm currently looking for internship and entry-level opportunities in cloud and software roles. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:anaghachithra005@gmail.com">anaghachithra005@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919446140938">+91-9446140938</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/anagha-chithra/" class="social-circle" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/anagha-p005/" class="social-circle" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="mailto:anaghachithra005@gmail.com" class="btn btn-primary">
+                        Hire Me <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="glass-card contact-form-wrapper">
+                    <form action="https://formspree.io/f/xdawqwda" method="POST">
+
+                    <div class="form-group">
+                         <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content glass-footer">
+            <p>&copy; 2025 Anagha P. All rights reserved.</p>
+            <div class="scroll-to-top" id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
